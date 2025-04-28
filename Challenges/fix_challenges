@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo "Starting folder renaming..."
+
+# Rename "Challange" to "challenge"
+
+find . -depth -type d -name "Challange" -execdir mv "{}" "challenge" \;
+
+# Rename "challange" to "challenge"
+
+find . -depth -type d -name "challange" -execdir mv "{}" "challenge" \;
+
+# Rename "Challenge" to "challenge"
+find . -depth -type d -name "Challenge" -execdir mv "{}" "challenge" \;
+
+# Rename "Solver" to "solver"
+find . -depth -type d -name "Solver" -execdir mv "{}" "solver" \;
+
+# Rename "Handout" to "handout"
+find . -depth -type d -name "Handout" -execdir mv "{}" "handout" \;
+
+echo "Folder renaming completed successfully!"
+
+echo "Starting to replace 'Handout' with 'handout' inside challenge.yml files..."
+
+# Find all challenge.yml files and replace "Handout" with "handout"
+find . -type f -name "challenge.yml" -exec sed -i 's/Handout/handout/g' {} +
+
+echo "Replacement completed successfully!"
+
+

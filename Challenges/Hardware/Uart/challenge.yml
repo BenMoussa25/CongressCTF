@@ -1,0 +1,23 @@
+name: "uart"
+author: "Garroura"
+category: Hardware
+description: |-
+    UART stands for universal asynchronous receiver / transmitter and defines a protocol, or set of rules, for exchanging serial data between two devices. UART is very simple and only uses two wires between transmitter and receiver to transmit and receive in both directions. Both ends also have a ground connection.
+    (UART)[https://www.rohde-schwarz.com/cz/products/test-and-measurement/essentials-test-equipment/digital-oscilloscopes/understanding-uart_254524.html#:~:text=UART%20stands%20for%20universal%20asynchronous,also%20have%20a%20ground%20connection.]
+    A device was sending out a transmission before it powered down. Luckily, an engineer managed to tap into the TX line and recorded the signals for analysis. It seems there’s a flag being transmitted but it is encoded in a wave of 1s and 0s.
+
+    Can you decode the signal and recover the flag?
+
+    **author**: Garroura
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{86c6e345f4cffceee16a01d10c4f7275}
+files:
+  - handout/uart.zip
+state: hidden
+version: "0.1"

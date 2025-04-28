@@ -1,0 +1,21 @@
+name: "Saihate Part 17 - Writing Reports is (not) fun"
+author: "videx"
+category: Forensics
+description: |-
+  Based on all the previous findings, can you find the CVE ID that affected the initial server and lead to the compromise?
+
+  Format: CyberSphere{<CVE ID>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{CVE-2025-24813}
+requirements:
+    - "Saihate Part 16 - Cloudy Cat?"
+state: hidden
+version: "0.1"

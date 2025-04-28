@@ -1,0 +1,19 @@
+name: "Stealer"
+author: "Enigma"
+category: Forensics
+description: |-
+  Our team is developing an API, but we’ve noticed that user credentials are consistently being leaked. We suspect something is wrong in the code. Could you help us figure out the problem?
+
+  **author**: AUTHOR
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{SupplY_Ch41n_4ttack_089685}
+files:
+  - handout/files.7z
+state: hidden
+version: "0.1"

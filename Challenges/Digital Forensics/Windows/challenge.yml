@@ -1,0 +1,21 @@
+name: "Windows"
+author: "Enigma"
+category: Forensics
+description: |-
+  My Windows machine was compromised, and I suspect it was due to a targeted attack. I’ve captured a disk image of the system. Could you help me find out what happened?
+
+  https://drive.google.com/file/d/1-usPB2Jk1J59SzW5T_2y46sG4fb9EeBk/view?usp=sharing
+  
+  `$ nc IP PORT`
+
+  **author**: AUTHOR
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{b48b5bdf8b03b81db4649ef450ca1fee}
+state: hidden
+version: "0.1"

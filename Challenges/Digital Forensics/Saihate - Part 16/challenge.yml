@@ -1,0 +1,21 @@
+name: "Saihate Part 16 - Cloudy Cat?"
+author: "videx"
+category: Forensics
+description: |-
+  A couple of hours after the servers compromise we noticed a mass deployment of resources on the victim’s cloud account. Can you help us confirm and assess this exposure?
+
+  Format: CyberSphere{<ID>_<Secret>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{AKIA3V5K9MJTR1WX9EYZ_fP7nLmQ3xTrVcZ9aKsWdBtXyA6gHuJqEpC2oDfHb}
+requirements:
+    - "Saihate Part 15 - Beckoning Cat"
+state: hidden
+version: "0.1"

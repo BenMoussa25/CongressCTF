@@ -1,0 +1,23 @@
+name: "Saihate Part 12 - Unknown Cat!"
+author: "videx"
+category: Forensics
+description: |-
+  With the compromised SSH credentials, we suspect that the threat actor was able to successfully pivot to the second machine. Can you find how long did the remote access session last? Also the source IP and source port used?
+
+  PS: The time we’re looking for is from successful password authentication until the end of the session.
+
+  Format: CyberSphere{<source IP>_<port>_<session time in HH:MM:SS>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{192.168.1.28_47638_00:17:47}
+requirements:
+    - "Saihate Part 11 - Meowconfigs"
+state: hidden
+version: "0.1"

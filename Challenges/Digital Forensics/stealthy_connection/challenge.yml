@@ -1,0 +1,19 @@
+name: "stealthy_connection"
+author: "Enigma"
+category: Forensics
+description: |-
+  can you reassemble the stolen fragments and recover the flag?
+
+  flag format: CyberSphere{...}
+
+  **author**: AUTHOR
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{dn5_3xf1l_ftw_X56345445454351_GJ}
+state: hidden
+version: "0.1"

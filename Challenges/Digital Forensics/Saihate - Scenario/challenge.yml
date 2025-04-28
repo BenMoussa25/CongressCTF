@@ -1,0 +1,24 @@
+name: "Saihate - Scenario"
+author: "videx"
+category: Forensics
+description: |-
+  Unusual behavior was observed on two internal systems, prompting a routine containment and investigation. While no standard alerts were raised, anomalies in access logs and system state point to possible unauthorized activity.
+  You are provided with collected artifacts from both systems. Your task is to analyze the available data, trace any unauthorized activity, and determine the scope and nature of the compromise.
+
+  File Link: https://drive.google.com/file/d/14qJl3RYVQvptBecz6SJN4HtSQ32ZidRT/view?usp=sharing
+
+  File Password: 38a07c859feacacac472aba430086af1abbd1115dc645cb3a732fb726c5e8436
+  Important details:
+  To help us verify your solution and understand your approach, we ask that you provide a detailed writeup by the end of the CTF as it will give you an advantage in solving this particular task.
+  
+  Submit this flag to start: CyberSphere{Saihate}
+
+  PS: For SHA256 sums, we recommend using CyberChef for strings anad sha256sum / Get-FileHash for files.
+
+  **author**: videx
+value: 0
+type: standard
+flags:
+  - CyberSphere{Saihate}
+state: hidden
+version: "0.1"

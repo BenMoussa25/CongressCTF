@@ -1,0 +1,26 @@
+name: "sha269"
+author: "jio"
+category: Reverse Engineering
+description: |-
+  I'm pretty sure you've heard about SHA-256, however have you ever heard about SHA-269?
+  It's a promising new hashing algorithm that is supposed to be more secure than SHA-256.
+  I don't know how it works, but I have a feeling that it is not as secure as they say.
+  Let's see if you can break it, here's the hash of the flag:
+
+  `ccacc8dced7ed270c2bb10c845ad818faffc8eb5f08af2d0e17b8336e8a333f5`
+
+  **Author**: [jio](https://jihedkdiss.tn)
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+
+flags:
+  - CyberSphere{SHA_MeEteEn_w_69}
+
+files:
+  - handout/sha269
+state: hidden
+version: "0.1"

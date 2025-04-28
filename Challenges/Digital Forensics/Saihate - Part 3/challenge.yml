@@ -1,0 +1,21 @@
+name: "Saihate Part 3 - A Cat's Network"
+author: "videx"
+category: Forensics
+description: |-
+  Lets move on to find some host networking details, can you get us the IP and MAC address for the main network interface?
+
+  Format: CyberSphere{<Host IP>_<MAC Address>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{192.168.1.19_08:00:27:89:97:13}
+requirements:
+    - "Saihate Part 2 - First Cat"
+state: hidden
+version: "0.1"

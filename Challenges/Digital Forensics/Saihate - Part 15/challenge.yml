@@ -1,0 +1,21 @@
+name: "Saihate Part 15 - Beckoning Cat"
+author: "videx"
+category: Forensics
+description: |-
+  After the initial response, one of the developers mentioned using a hardcoded secret in one of the automations for their DevOps tasks and that they forgot to rotate it. Can you find it?
+
+  Format: CyberSphere{<secret SHA256 sum>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{40775bcd649ea3b276a4728693250951498b7e9977b462a406dabb83d2149b78}
+requirements:
+    - "Saihate Part 14 - Kondo Catto"
+state: hidden
+version: "0.1"

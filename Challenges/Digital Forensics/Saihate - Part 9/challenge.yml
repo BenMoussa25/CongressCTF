@@ -1,0 +1,23 @@
+name: "Saihate Part 9 - R3verse Cat"
+author: "videx"
+category: Forensics
+description: |-
+  The threat actor attempted to get a reverse shell multiple times. Can you find the number and port the attacker user? Can you also find the last payload that was used to stabilize the reverse shell?
+
+  PS: Decode the payload before generating the SHA digest.
+
+  Format: CyberSphere{<number>_<Payload’s SHA256 SUM>_<port>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{13_13e5b4b56447415508ee7288c003711b40b23c635bd79853f134a831231bd63d_3337}
+requirements:
+    - "Saihate Part 8 - Catting Secrets"
+state: hidden
+version: "0.1"

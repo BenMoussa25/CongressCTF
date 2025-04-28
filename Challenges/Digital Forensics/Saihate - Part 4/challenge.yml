@@ -1,0 +1,23 @@
+name: "Saihate Part 4 - Apps and Cats"
+author: "videx"
+category: Forensics
+description: |-
+  The IR manager mentioned that this server hosting is hosting an application, can you find it’s name?
+
+  PS: We want the generic name as you would find it via a google search.
+
+  Format: CyberSphere{<Application Name>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{Apache Tomcat}
+requirements:
+    - "Saihate Part 3 - A Cat's Network"
+state: hidden
+version: "0.1"

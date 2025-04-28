@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Parse options
+while getopts "d:" opt; do
+  case ${opt} in
+    d )
+      TASKS_DIR="$OPTARG"
+      ;;
+    \? )
+      echo "Usage: $0 -d <tasks_directory>"
+      exit 1
+      ;;
+  esac
+done
+
+# Check if TASKS_DIR was set
+if [ -z "$TASKS_DIR" ]; then
+  echo "Error: Task directory not specified."
+  echo "Usage: $0 -d <tasks_directory>"
+  exit 1
+fi
+
+# Step 1: Run 'ctf init'
+echo "Running 'ctf init'..."
+ctf init
+
+# Step 2: Install each challenge
+echo "Installing challenges from $TASKS_DIR..."
+for folder in "$TASKS_DIR"/*; do
+    if [ -d "$folder" ]; then
+        echo "Installing challenge: $(basename "$folder")"
+        ctf challenge install "$folder"
+    fi
+done
+
+echo "All challenges installed successfully!"

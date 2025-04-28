@@ -1,0 +1,21 @@
+name: "Saihate Part 13 - History and Cats"
+author: "videx"
+category: Forensics
+description: |-
+  We believe that some internal communication platform secrets have been leaked and possibly exfiltrated. Can you find them?
+
+  Format: CyberSphere{<file>_<secret>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{config.json_msteams_sk_dT3h09dk3oFn89dhWqk5Zs8Yv9x5WbFG}
+requirements:
+    - "Saihate Part 12 - Unknown Cat!"
+state: hidden
+version: "0.1"

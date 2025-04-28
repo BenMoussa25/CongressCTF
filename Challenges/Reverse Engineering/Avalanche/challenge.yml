@@ -1,0 +1,25 @@
+name: "Avalanche64"
+author: "jio"
+category: Reverse Engineering
+description: |-
+  You're probably used to reversing the challenge then writing the solver, right? Well, this time we're doing things the other way around!
+  Don't believe me? Here is the flag: `CyberSphere{Y0U_4re_th3_auth0r_T0D4Y!}`
+
+  The attached solver allegedly takes some input, then prints the flag, as usual.
+  However, you've already got the flag, which means? You'll be looking for the correct input instead! Something us CTF authors are used to doing, right?
+
+  But the trick here is that the way to the solver is, let's just say, a bit annoying...
+
+  **Author**: [jio](https://jihedkdiss.tn) and you, YES YOU!
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{5a875ff9853cf7ce5a875ff9853cf7ce5a875ff9853cf7ce5a875ff9853cf7ce5a875ff9853cf7ce5a875ff9853cf7ce5a875ff9853cf7ce5a875ff9e08f88f3}
+files:
+  - handout/solver.pyc
+state: hidden
+version: "0.1"

@@ -1,0 +1,19 @@
+name: "Saihate Part 1 - File Integrity"
+author: "videx"
+category: Forensics
+description: |-
+  Lets start by verifying the DFIR collection integrity. Can you get the file SHA256 sum?
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{C073BE71C7CFABC6855F2FA610D94F5C67D038C948A607756D9933773CAFB361}
+requirements:
+    - "Saihate - Scenario"
+state: hidden
+version: "0.1"

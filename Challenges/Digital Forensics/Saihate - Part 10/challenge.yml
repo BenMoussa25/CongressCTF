@@ -1,0 +1,21 @@
+name: "Saihate Part 10 - Cat pickpocket?"
+author: "videx"
+category: Forensics
+description: |-
+  After gaining access, we think that the threat actor was able to exfiltrate a number of files to his machine. Can you find the endpoint that was used to receive the files as well as their number?
+
+  Format: CyberSphere{<number of files>_<endpoint>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{4_http://192.168.1.28/upload}
+requirements:
+    - "Saihate Part 9 - R3verse Cat"
+state: hidden
+version: "0.1"

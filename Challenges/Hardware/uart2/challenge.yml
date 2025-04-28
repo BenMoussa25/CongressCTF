@@ -1,0 +1,19 @@
+name: "uart2"
+author: "Garroura"
+category: Hardware
+description: 
+  This UART link uses a non-standard baud rate. can you find it?
+
+  **author:** Garroura
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{47653d171b3230970ffdf70a1be6e883}
+files:
+  - handout/uart2.zip
+state: hidden
+version: "0.1"

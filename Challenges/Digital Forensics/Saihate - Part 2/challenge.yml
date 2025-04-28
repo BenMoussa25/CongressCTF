@@ -1,0 +1,21 @@
+name: "Saihate Part 2 - First Cat"
+author: "videx"
+category: Forensics
+description: |-
+  We are looking to collect some information about the first server, can you retrieve the hostname, OS distribution and version number? PS: For version number we only need the first 4 digits.
+
+  Format: CyberSphere{<hostname>_<OS distribution>_<version number>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{cybersphere-ftp-prod-17_ubuntu_22.04}
+requirements:
+    - "Saihate Part 1 - File Integrity"
+state: hidden
+version: "0.1"

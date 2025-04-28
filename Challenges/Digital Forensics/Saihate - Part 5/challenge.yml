@@ -1,0 +1,21 @@
+name: "Saihate Part 5 - Bad Cat? Where!?"
+author: "videx"
+category: Forensics
+description: |-
+  Using the collection files, can you identify the threat actor’s IP?
+
+  Format: CyberSphere{<attacker IP>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{192.158.1.28}
+requirements:
+    - "Saihate Part 4 - Apps and Cats"
+state: hidden
+version: "0.1"

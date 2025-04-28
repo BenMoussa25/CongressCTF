@@ -1,0 +1,23 @@
+name: "Saihate Part 7 - Cat loves RCE"
+author: "videx"
+category: Forensics
+description: |-
+  Can you find the web resource path / endpoint that was used by the threat actor to achieve RCE?
+
+  Example: /index.html
+
+  Format: CyberSphere{/<endpoint>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{/updates.jsp}
+requirements:
+    - "Saihate Part 6 - Curious Cat"
+state: hidden
+version: "0.1"

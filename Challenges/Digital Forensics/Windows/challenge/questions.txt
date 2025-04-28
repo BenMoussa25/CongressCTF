@@ -1,0 +1,30 @@
+What is the SHA256 hash of the disk image provided?
+122b2b4bf1433341ba6e8fefd707379a98e6e9ca376340379ea42edb31a5dba2
+Identify the OS build number of the victim’s system?
+19045
+What is the ip of the victim's machine?
+192.168.206.131
+What is the name of the email application used by the victim?
+thunderbird
+What is the email of the victim?
+ammar55221133@gmail.com
+What is the email of the attacker?
+masmoudim522@gmail.com
+What is the URL that the attacker used to deliver the malware to the victim?
+https://tmpfiles.org/dl/23860773/sys.exe
+What is the SHA256 hash of the malware file?
+be4f01b3d537b17c5ba7dc1bb7cd4078251364398565a0ca1e96982cff820b6d
+What is the IP address of the C2 server that the malware communicates with?
+40.113.161.85
+What port does the malware use to communicate with its Command & Control (C2) server?
+5000
+What is the url if the first Request made by the malware to the c2 server?
+http://40.113.161.85:5000/helppppiscofebabe23
+The malware created a file to identify itself. What is the content of that file?
+3649ba90-266f-48e1-960c-b908e1f28aef
+Which registry key did the malware modify or add to maintain persistence?
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\MyApp
+What is the content of this registry?
+C:\Users\ammar\Documents\sys.exe
+The malware uses a secret token to communicate with the C2 server. What is the value of this key?
+e7bcc0ba5fb1dc9cc09460baaa2a6986

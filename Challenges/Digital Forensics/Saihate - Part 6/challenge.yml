@@ -1,0 +1,21 @@
+name: "Saihate Part 6 - Curious Cat"
+author: "videx"
+category: Forensics
+description: |-
+  We believe that the threat actor was able to upload a file to test if the server is misconfigured. Can you find the it’s name and content?
+
+  Format: CyberSphere{<file>_<content sha256sum>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{nothing.txt_3f537ad2ab56d0fbc4376f2289458a2b546c8cf295e137650cbe30cbb5b15946}
+requirements:
+    - "Saihate Part 5 - Bad Cat? Where!?"
+state: hidden
+version: "0.1"

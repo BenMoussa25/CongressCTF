@@ -1,0 +1,21 @@
+name: "Saihate Part 8 - Catting Secrets"
+author: "videx"
+category: Forensics
+description: |-
+  We believe that the Tomcat credentials have been leaked early on during the attack. Can you find the administrator’s username and password?
+
+  Format: CyberSphere{<username>_<password>}
+  
+  **author**: videx
+value: 250
+type: dynamic
+extra:
+  initial: 250
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{admin_Aaccesspass}
+requirements:
+    - "Saihate Part 7 - Cat loves RCE"
+state: hidden
+version: "0.1"

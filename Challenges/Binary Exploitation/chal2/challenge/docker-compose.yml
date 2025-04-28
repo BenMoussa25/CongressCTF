@@ -1,0 +1,19 @@
+
+version: '3'
+services:
+    heapstar:
+        build: .
+        ports:
+            - 7001:5000
+        read_only : true
+        privileged: true
+        cap_drop:
+            - all
+        restart: on-failure
+
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.2'
+                    memory: 1000M
+

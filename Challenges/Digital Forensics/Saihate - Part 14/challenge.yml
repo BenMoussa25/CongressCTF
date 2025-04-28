@@ -1,0 +1,21 @@
+name: "Saihate Part 14 - Kondo Catto"
+author: "videx"
+category: Forensics
+description: |-
+  We’ve noticed that the TA used a script to look for misconfigurations in the server, can you find the command that was used to invoke it?
+
+  Format: CyberSphere{<SHA256 sum of the command>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{c1d7b4fa2d47ddb90bb5956f03ab4bfa188edb6974cc84b65f86d12c64af8795}
+requirements:
+    - "Saihate Part 13 - History and Cats"
+state: hidden
+version: "0.1"

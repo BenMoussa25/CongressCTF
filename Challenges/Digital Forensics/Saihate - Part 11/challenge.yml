@@ -1,0 +1,21 @@
+name: "Saihate Part 11 - Meowconfigs"
+author: "videx"
+category: Forensics
+description: |-
+  We think that the threat actor came across a misconfiguration in a file that was left there by Coffee, one of our junior developers. The exposure of secrets in that file allowed the threat actor to pivot to a second server.
+
+  Format: CyberSphere{<server IP>_<hostname>_<secret>}
+  
+  **author**: videx
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+flags:
+  - CyberSphere{cybersphere-web-prod-09_192.168.1.16_cyberspherewebpassword}
+requirements:
+    - "Saihate Part 10 - Cat pickpocket?"
+state: hidden
+version: "0.1"
