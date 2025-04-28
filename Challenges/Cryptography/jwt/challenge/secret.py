@@ -1,0 +1,2 @@
+FLAG = b"CyberSphere{5de38922ba3c8fac6a116b81ef460695}"
+ADMINPASS = "BHLOUS6969"

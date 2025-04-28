@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: ecb_oracle
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 6000 /home/ctf/launch.sh"
+    ports:
+      - "6000:6000"
+    read_only: true

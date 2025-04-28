@@ -1,0 +1,11 @@
+
+services:
+  app:
+    build: .
+    container_name: rsa_oracle
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 6001 /home/ctf/launch.sh"
+    ports:
+      - "6001:6001"
+    read_only: true

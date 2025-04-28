@@ -1,0 +1,21 @@
+name: "B4rn4o0ui"
+author: "AGENTOO"
+category: crypto
+description: |-
+  just decrypt the flag it is not that hard
+
+  `$ nc sparkctf.tech 1000`
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSephere{4864d93a0247ee8d43ae018963ab1dc7}
+files:
+  - handout/task.py
+state: hidden
+version: "0.1"

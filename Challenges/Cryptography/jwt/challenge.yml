@@ -1,0 +1,21 @@
+name: "Guess What"
+author: "AGENTOO"
+category: crypto
+description: |-
+  Authentication is supposed to be secure, but is it really? Take a closer look, you might find something unexpected.
+
+  `$ nc sparkctf.tech 1000`
+
+  **author**: AGENTOO
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 20
+  minimum: 10
+flags:
+  - CyberSphere{5de38922ba3c8fac6a116b81ef460695}
+files:
+  - handout/app.py
+state: hidden
+version: "0.1"
